@@ -1,3 +1,4 @@
+import { makeSonic } from "../entities/sonic";
 import k from "../kaplayCtx";
 
 export default function mainMenu() {
@@ -15,6 +16,14 @@ export default function mainMenu() {
     k.add([k.sprite("platforms"), k.pos(0,450), k.scale(4), k.opacity(0.8)]),
     k.add([k.sprite("platforms"), k.pos(platformWidth,450), k.scale(4), k.opacity(0.8)])
   ]
+
+  makeSonic(k.vec2(200,745));
+
+  k.add([
+    k.text("SONIC RUN GAME", {font: "mania", size: 150}),
+    k.pos(k.center().x, 200),
+    k.anchor("center")
+  ])
 
   k.onUpdate(() => {
     if (backgroundPieces[1].pos.x < 0) {
