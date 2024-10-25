@@ -14,7 +14,7 @@ const k = kaplay({
     mouse: "left"
   },
   debugKey: "d",
-  // deactivate at the end of developing
+  // deactivate at the end of
   debug: true
 });
 
