@@ -25,6 +25,12 @@ export default function mainMenu() {
     k.anchor("center")
   ])
 
+  k.add([
+    k.text("Press Space/Click to Play", {font: "mania", size: 50}),
+    k.pos(k.center().x, k.center().y - 200),
+    k.anchor("center")
+  ])
+
   k.onUpdate(() => {
     if (backgroundPieces[1].pos.x < 0) {
       backgroundPieces[0].moveTo(backgroundPieces[1].pos.x + backgroundPieceWidth * 2, 0);

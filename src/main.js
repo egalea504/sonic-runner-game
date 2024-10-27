@@ -1,4 +1,5 @@
 import k from "./kaplayCtx";
+import game from "./scenes/game";
 import mainMenu from "./scenes/mainMenu";
 
 k.loadSprite("chemical-background", "graphics/chemical-bg.png");
@@ -37,9 +38,7 @@ k.loadSound("ring", "sounds/Ring.wav");
 
 k.scene("main-menu", mainMenu);
 
-k.scene("game", () => {
-
-});
+k.scene("game", game);
 
 k.scene("gameover", () => {
 

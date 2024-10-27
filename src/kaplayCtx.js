@@ -10,8 +10,10 @@ const k = kaplay({
   touchToMouse: true,
   // create key and assign keyboard keys
   buttons: {
+    jump: {
     keyboard: ["space"],
     mouse: "left"
+    },
   },
   debugKey: "d",
   // deactivate at the end of
