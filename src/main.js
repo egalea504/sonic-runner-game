@@ -1,5 +1,6 @@
 import k from "./kaplayCtx";
 import game from "./scenes/game";
+import gameover from "./scenes/gameover";
 import mainMenu from "./scenes/mainMenu";
 
 k.loadSprite("chemical-background", "graphics/chemical-bg.png");
@@ -40,8 +41,6 @@ k.scene("main-menu", mainMenu);
 
 k.scene("game", game);
 
-k.scene("gameover", () => {
-
-});
+k.scene("gameover", gameover);
 
 k.go("main-menu");
